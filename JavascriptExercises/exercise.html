@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="myScript.js"></script>
+<h2>Javascrip external change</h2>
+
+
+<p id="block">Hi</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+
+<h2>Inner HTML</h2>
+<p id="demo">Hi again</p>
+
+<button type="button" on onclick="myAddition()">5+6</button>
+
+<script>
+    document.write(5 + 6);
+</script>
+
+<button type="button" onclick="document.write('Erased')">ERASE</button>
+
+<script>
+    window.alert('Welcome to the Javascript Sandbox');/*yas*/
+</script>
+
+<script>
+    console.log(58 + 96); //heyyyyyyy
+</script>
+
+<script>
+    var x = 5;
+    var y = x **2; // = 5^2 => 25
+    alert(y);
+</script>
+
+<script>
+    var text = "azertyuiop"
+    var pos = text.indexOf("z");
+    alert(pos);
+</script>
+
+<h2 id = bananaTest>JSString Exercises :</h2>
+<script>
+    var txt = "I can eat bananas all day <br>";
+    document.write(txt);
+    var x = txt.slice(10,17);
+    alert(x);
+    txt = txt.replace("eat", "grow");
+    document.write(txt);
+    txt=txt.toUpperCase();
+    document.write(txt);
+    var str1 = "I Love ";
+    var str2 = "Bananas<br>";
+    var result = str1.concat(str2);
+    document.write(result);
+</script>
+
+<h2 id = stillBanana>JSArray Exercises</h2>
+<script>
+    document.write('This are my fruits before I eat one<br>');
+    var fruits = ["Apple", "Orange", "Banana"];
+    document.write(fruits +"<br>");
+    fruits.pop();
+    document.write('*Eats One*<br>');
+    document.write("Now I only have : <br>"+fruits+"<br>");
+    document.write("I'm gonna buy more fruits<br>");
+    fruits.push("Nuggets")
+    document.write("Alright I'm back, now I have : <br>" +
+                    fruits + "<br>" + 
+                    "Yes I got weak, I got myself "+fruits[2] + " instead of fruits <br>"+
+                    "Alright I'm not gonna eat the "+fruits[2]+" But the " + fruits[1]+"<br>"+
+                    "*Eats "+fruits[1] + "<br>");
+    fruits.splice(1,1);
+    document.write("Well, I only have " + fruits + " left <br>");
+</script>
+
+<h2 id = endofbanana?>JSDate Exercises</h2>
+<script>
+    var d = new Date();
+    document.write(d +"<br>");
+    var year = d.getFullYear();
+    document.write("THIS IS THE YEAR "+year+"<br>");
+    var month = d.getMonth()
+    document.write('AND THE MONTH '+ month +"<br>" +
+                    "I'M GOING TO MY TIME MACHINE, WOOP WOOP <br>");
+    d.setFullYear(2020);
+    document.write("WOOOOP WOOP, I'M NOW IN " +d.getFullYear() +"<br>");
+</script>
+
+<h2 id = endofbanana?>JSMath Exercices</h2>
+<script>
+    var r =Math.floor(Math.random()*1000);
+    document.write("THIS IS WAR IN THE FUTURE, THERE'S CURRENTLY ABOUT "+r+
+    " MECHA CHICKEN GOING WILD, SEEKING REVENG FOR THE FALLENS NUGGETS<br>");
+    var x = Math.max(10,50,94);
+    document.write("One of the chiken is " + x +" meters tall, HE IS CHARGING TOWARD ME <br>");
+    var s = Math.round(50.6);
+    var k = Math.sqrt(9);
+</script>
+
+<h2 id = bananareturns>JSComparison Exercises</h2>
+<script>
+    var age = n;
+    var voteable = (age < 18) ?"Too young" : "Old enough";
+alert(voteable);
+</script>
+
+<h2 id = bananarevolution>JS HTML DOM</h2>
+<img id="image" src="img/solaire.gif">
+<p id ="praise">PRAISE THE SUN \[T]/</p>
+<img id="cata" src="img/catarina.gif">
+<button type="button" onclick="hideCata()">Put Catarina to bed</button>
+<button id ="surprise" type="button">MYSTERIOUS BUTTON</button>
+<script>
+    document.getElementsByTagName("p")[0].innerHTML= "Hello Banana Hacked";
+    //document.getElementById("image").src= "bonefire.gif";
+    document.getElementById("praise").style.color = "orange";
+    document.getElementById("praise").style.fontSize = "60px";
+    document.getElementById("surprise").addEventListener("click",hideCata);
+    function hideCata(){
+        document.getElementById("cata").style.display="none";
+    };  
+</script>
+
+<h1 id = Banananewadventure>JS OBJECTS</h2>
+</body>
+</html> 
